@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-printcart-trigger",
   "version": "0.1.0",
-  "description": "",
+  "description": "Node help caatch data from printcart Webhook",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "Printcart.com",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Printcart.com",
+    "email": "hieuwork.com@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/Printcart/n8n-nodes-printcart-trigger.git"
   },
   "main": "index.js",
   "scripts": {
@@ -29,16 +29,12 @@
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
-    ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/TriggerPrintcart/TriggerPrintcart.node.d.ts"
     ]
   },
   "devDependencies": {
+    "@types/basic-auth": "^1.1.8",
     "@types/express": "^4.17.6",
     "@types/request-promise-native": "~1.0.15",
     "@typescript-eslint/parser": "~5.45",
@@ -48,5 +44,9 @@
     "n8n-workflow": "*",
     "prettier": "^2.7.1",
     "typescript": "~4.8.4"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "n8n": "^1.31.2"
   }
 }
